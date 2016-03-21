@@ -452,7 +452,7 @@ header {
     #slider .slider__cover .slider__text {
       position: absolute;
       text-align: center;
-      left: 50%;
+      left: calc(61% - 180px);
       top: 30px; }
       #slider .slider__cover .slider__text h3 {
         color: #60605d;
@@ -516,7 +516,8 @@ footer {
       text-indent: 15px;
       padding-top: 0px;
       border: 1px solid transparent;
-      border-top-color: #c4c4c4; }
+      border-top-color: #c4c4c4;
+      outline: none; }
       footer form input::-webkit-input-placeholder {
         font-weight: 300;
         color: #6a6a6a;
