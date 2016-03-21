@@ -3,11 +3,8 @@ $(document).ready(function() {
  	
  		items:1,
  		navigation:true,
- 		responsive:{
- 			0:{
-            	items:1
-        	}
- 		}
+ 		autoWidth: true,
+ 		
  	});
  	$('#select').click(function(){
 		$('#country').toggle();
@@ -21,6 +18,7 @@ $(document).ready(function() {
 			c.value = this.innerHTML;
 		});
 	});
+
 		
 	
  })

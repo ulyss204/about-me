@@ -78,25 +78,9 @@ if ( typeof Object.create !== 'function' ) {
 
 			var width = $(window).width();
 
-			if(width > (base.options.itemsDesktop[0] || base.orignalItems) ){
-				 base.options.items = base.orignalItems
-			} 
+			 
 
-			if(width <= base.options.itemsDesktop[0] && base.options.itemsDesktop !== false){
-				base.options.items = base.options.itemsDesktop[1];
-			}  
-
-			if(width <= base.options.itemsDesktopSmall[0] && base.options.itemsDesktopSmall !== false){
-				base.options.items = base.options.itemsDesktopSmall[1];
-			}  
-
-			if(width <= base.options.itemsTablet[0]  && base.options.itemsTablet !== false){
-				base.options.items = base.options.itemsTablet[1];
-			} 
-
-			if(width <= base.options.itemsMobile[0] && base.options.itemsMobile !== false){
-				base.options.items = base.options.itemsMobile[1];
-			}
+			
 			
 		},
 		updateVars : function(){
