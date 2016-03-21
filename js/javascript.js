@@ -1,10 +1,22 @@
 $(document).ready(function() {
- $("#slider").owlCarousel({
+ 	$("#slider").owlCarousel({
  	
- 	items:1,
- 	navigation:true,
- });
-})
+ 		items:1,
+ 		navigation:true,
+ 	});
+ 	$('#select__span').click(function(){
+		$('#country').toggle();
+	});
+	$('#country li').each(function(){
+		$('#country li').click(function(){
+			$('#country').hide();
+			c.value = this.innerHTML;
+		});
+	});
+		
+	
+ })
+var c = document.getElementById('select');
 
 var a = document.getElementById("myImage");
 var atx = a.getContext("2d");
