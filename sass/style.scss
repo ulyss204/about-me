@@ -67,6 +67,7 @@ header{
 	border: none;
 	margin-top: 5px;
 	font-weight: 500;
+	outline: none;
 	&:hover{
 		background-color: #35c270;
 		background-image: none;
@@ -94,6 +95,7 @@ header{
 		background-size: cover;
 		width: 100%;
 		background: url(../images/img1.jpg) no-repeat;
+		background-position: center;
 		position: relative;
 		.slider__text{
 			position: absolute;
@@ -146,6 +148,7 @@ footer{
 	overflow: auto;
 	background: url(../images/plate.png) no-repeat;
 	background-size: cover;
+	background-position: center;
 	height: 525px;
 	width: 100%;
 	form{

@@ -4,7 +4,7 @@ $(document).ready(function() {
  		items:1,
  		navigation:true,
  		autoWidth: true,
- 		
+ 		loop:true,
  	});
  	$('#select').click(function(){
 		$('#country').toggle();

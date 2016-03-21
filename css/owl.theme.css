@@ -19,8 +19,21 @@
 	color: transparent;
 	background: url(../images/scr.png) no-repeat;
 	height: 30px;
+
 	
 }
+.owl-theme .owl-controlls .owl-buttons .owl-prev{
+	right: 86%;
+	background: url(../images/scr1.png) no-repeat;
+}
+@media screen and (max-width: 820px) {
+	.owl-theme .owl-controlls .owl-buttons div{
+		right: 0;
+	}
+	.owl-theme .owl-controlls .owl-buttons .owl-prev{
+		right: 95%;
+}
+
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controlls.clickable .owl-buttons div:hover{
