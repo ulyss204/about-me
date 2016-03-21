@@ -3,7 +3,15 @@ $(document).ready(function() {
  	
  		items:1,
  		navigation:true,
+ 		responsive:{
+ 			0:{
+            	items:1
+        	}
+ 		}
  	});
+ 	$('#select').click(function(){
+		$('#country').toggle();
+	});
  	$('#select__span').click(function(){
 		$('#country').toggle();
 	});

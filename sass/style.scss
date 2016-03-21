@@ -1,22 +1,24 @@
 @import "_normalize";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,100,300);
 @mixin change-size {
-  @media (min-width: 1000px) {
+  @media (max-width: 820px) {
     @content;
   }
 }
 body{
 	margin: 0 auto;
 	
-	min-width: 320px;
+	min-width: 450px;
 	width: 100%;
 	font-family: 'Roboto';
 }
 .wrapper{
-	
-		overflow: auto;
-		margin: 0 10%;
-	
+
+	overflow: auto;
+	margin: 0 10%;
+	@include change-size {
+		margin: 0;
+	}	
 }
 header{
 	width: 100%;
@@ -38,6 +40,7 @@ header{
 	    width: 210px;
 		position: absolute;
     	left: calc(50% - 101px);
+    	margin-top: 15px;
 		li{
 			display: inline-block;
 			
@@ -89,7 +92,7 @@ header{
 	.slider__cover{
 		height: 420px;
 		background-size: cover;
-		
+		width: 100%;
 		background: url(../images/img1.jpg) no-repeat;
 		position: relative;
 		.slider__text{
@@ -113,6 +116,11 @@ main{
 		float: left;
 		width: 42%;
 		font-weight: 300;
+		@include change-size {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
 		h4{
 			font-size: 26px;
 			color: #2c3e50;
@@ -126,6 +134,12 @@ main{
 	}
 	canvas{
 		float: right;
+		@include change-size {
+			float: none;
+			margin: 0 auto;
+			display: block;
+			
+		}
 	}
 }
 footer{
